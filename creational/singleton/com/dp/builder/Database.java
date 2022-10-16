@@ -49,11 +49,7 @@ public class Database {
 			if(!isValid()) {
 				throw new RuntimeException("Invalid Configuration");
 			}
-			Database database = new Database();
-			database.host = this.database.host;
-			database.port = this.database.port;
-			database.name = this.database.name;
-			database.password = this.database.password;
+			Database database = this.database;
 			return database;
 		}
 		
